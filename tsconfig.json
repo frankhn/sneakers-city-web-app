@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "strictNullChecks": false,
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": [
+        "src/Components/*"
+      ],
+      "@Components": [
+        "src/Components"
+      ],
+      "@Redux": [
+        "src/redux"
+      ],
+      "@Redux/*": [
+        "src/redux/*"
+      ],
+      "@Server/*": [
+        "server/*"
+      ],
+      "@Static/*": [
+        "public/static/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out",
+    "next.config.js",
+    ".babelrc",
+    "bundles",
+    "coverage",
+    "test/*"
+  ]
+}
