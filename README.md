@@ -4,7 +4,7 @@
 
 #### Demo
 
-  [Demo]()
+  [Demo](https://sneakerscity.netlify.app)
 
 ## Getting started
 
