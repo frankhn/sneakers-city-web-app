@@ -1,0 +1,46 @@
+$font-size: 1.5rem;
+$background: #0d33e2;
+
+.toolbar {
+  position: sticky;
+  left: 0;
+  right: 0;
+  padding: .5rem 10% .3rem;
+  background: $background;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+   
+    .list {
+      display: flex;
+       flex-wrap: wrap;
+    list-style-type: none;
+    color: #fff;
+        grid-gap: 1rem;
+    }
+
+    ul li a{
+      color: #fff;
+    }
+  }
+
+   .__book {
+      justify-self: flex-end;
+         padding: .2rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    }
+
+  .brand {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: cursive;
+  }
+}
