@@ -4,10 +4,10 @@ import { getASneaker } from '../store/action'
 import { AppState } from '@Redux'
 
 import './index.css'
-import Loader from 'src/components/common/Spinner/Loader'
+import Loader from '../../common/Spinner/Loader'
 import SneakerItemImage from './image'
 import SneakerItemDetails from './details'
-import { setTitle } from 'src/HOC/store/action'
+import { setTitle } from '../../../HOC/store/action'
 
 interface ISneakerProps {
     sneakerId: any

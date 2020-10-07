@@ -4,7 +4,7 @@ import { UncontrolledPopover, PopoverHeader, PopoverBody, Button } from 'reactst
 import './index.scss';
 import CartProducts from './products'
 import { useState } from 'react';
-import updateObject from 'src/helpers/updateObject';
+import updateObject from '../../helpers/updateObject';
 import Checkout from './products/checkout'
 
 

@@ -7,7 +7,7 @@ import { AppState } from '@Redux'
 import Card from './card'
 import Loader from '../common/Spinner/Loader'
 import Pagination from '../common/pagination'
-import updateObject from 'src/helpers/updateObject'
+import updateObject from '../../helpers/updateObject'
 import { useRouter } from 'next/router'
 
 interface Sneakers {

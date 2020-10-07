@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Alert, Button, Input } from "reactstrap"
 import Cookies from 'universal-cookie';
 
-import updateObject from "src/helpers/updateObject"
+import updateObject from "../../../helpers/updateObject"
 import { useRouter } from "next/router";
 
 interface ISneakerProps {

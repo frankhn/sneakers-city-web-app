@@ -1,21 +1,15 @@
-import React, { useState } from 'react';
 import { Navbar, NavbarBrand, Collapse, Nav, NavbarText, NavbarToggler } from 'reactstrap'
 
 // #region Local
 import './index.scss';
 import Button from '../button'
-import Popover from 'src/components/cart';
+import Popover from '../../cart';
 
 interface IHEADERPROPS {
 
 }
 
 const toolBar = ({ }: IHEADERPROPS) => {
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
 
   return (
     <>
