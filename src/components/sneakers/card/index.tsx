@@ -10,7 +10,6 @@ interface ISneakersProps {
     picture: string
     price: number
     brand: any
-    details: Object
 }
 
 

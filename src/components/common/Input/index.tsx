@@ -50,19 +50,6 @@ const input: React.SFC<InputProps> = (props: InputProps) => {
         onChange={props.changed}
       />;
       break;
-    case ('select'):
-      inputElement = (
-        <select
-          className={`input__element ${props.class}`}
-          value={props.value}
-          onChange={props.changed}>
-          {props.elementConfig.options.map((option: any) => (
-            <option key={option.value} value={option.value}> {
-              option.displayValue
-            }</option>
-          ))}
-        </select>);
-      break;
     default:
       inputElement = <input
         className={`input__element ${props.class}`} {...props.elementConfig}
