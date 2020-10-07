@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "nodemon",
-    "build": "next build",
+    "build": "next build && npx next export",
     "start": "next start",
     "lint": "eslint './{src,pages,server}/**/*' --ext .tsx,.ts",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest --silent",
+    "test:coverage": "jest --coverage --silent --watchAll"
   },
   "repository": {
     "type": "git",
@@ -21,12 +23,10 @@
   "homepage": "https://github.com/frankhn/sneakers-city-web-app#readme",
   "dependencies": {
     "@babel/register": "^7.11.5",
-    "@time4hacks/react-progressive-image": "0.0.1",
     "@types/next-redux-saga": "^3.0.2",
-    "@types/styled-components": "^5.1.3",
-    "availity-reactstrap-validation": "^2.6.1",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "availity-reactstrap-validation": "^2.6.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.2",
     "express": "^4.17.1",
@@ -46,14 +46,24 @@
     "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@types/enzyme": "^3.10.7",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/express": "^4.17.8",
+    "@types/jest": "^26.0.14",
     "@types/node": "^14.10.0",
     "@types/react": "^16.9.49",
     "@types/react-redux": "^7.1.9",
     "@types/reactstrap": "^8.5.1",
+    "@types/redux-mock-store": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^4.1.0",
     "@typescript-eslint/parser": "^4.1.0",
+    "babel-jest": "^26.5.2",
     "babel-plugin-module-resolver": "^4.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^7.9.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -62,8 +72,13 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.5.2",
+    "react-test-renderer": "^16.13.1",
     "redux-devtools-extension": "^2.13.8",
+    "redux-mock-store": "^1.5.4",
+    "ts-jest": "^26.4.1",
     "ts-node": "^8.4.1",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   }
 }
