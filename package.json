@@ -7,7 +7,7 @@
     "build": "next build && npx next export",
     "start": "next start",
     "lint": "eslint './{src,pages,server}/**/*' --ext .tsx,.ts",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "npm run lint --fix",
     "test": "jest --silent",
     "test:coverage": "jest --coverage --silent --watchAll"
   },
